@@ -1,0 +1,23 @@
+{
+  "name": "vocabpro",
+  "version": "1.0.0",
+  "description": "Reminder to revise words",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashmore1/VocabPro_Test.git"
+  },
+  "author": "Akash More",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akashmore1/VocabPro_Test/issues"
+  },
+  "homepage": "https://github.com/akashmore1/VocabPro_Test#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
