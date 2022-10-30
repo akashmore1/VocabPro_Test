@@ -1,3 +1,5 @@
+// npx nodemon app.js
+
 const express = require("express");
 const fs = require("fs");
 
