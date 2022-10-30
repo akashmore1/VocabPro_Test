@@ -7,7 +7,6 @@ app.use(express.json());
 const words = JSON.parse(
   fs.readFileSync("./dev-data/words.txt", "utf-8", () => {})
 );
-// console.log(words);
 
 const createWord = (req, res) => {
   const newWord = Object.assign({}, req.body);
@@ -29,6 +28,11 @@ const createWord = (req, res) => {
   });
 };
 
+const getWords = (req, res) => {
+  res.status(200).json(words);
+};
+
+app.get("/api/v1/words", getWords);
 app.post("/api/v1/words", createWord);
 
 const port = 3000;
