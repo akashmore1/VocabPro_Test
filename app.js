@@ -5,6 +5,12 @@ const fs = require("fs");
 
 const app = express();
 app.use(express.json());
+const cors = require("cors");
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 const words = JSON.parse(
   fs.readFileSync("./dev-data/words.txt", "utf-8", () => {})
